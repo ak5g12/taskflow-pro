@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>TaskFlow Pro</h1>
+
+            <div class="stats">
+                <div class="stat">
+                    <span id="totalTasks">0</span>
+                    <p>Total</p>
+                </div>
+
+                <div class="stat">
+                    <span id="doneTasks">0</span>
+                    <p>Done</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="task-form">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter task..."
+            >
+
+            <button id="addBtn">
+                Add Task
+            </button>
+
+        </div>
+
+        <div class="board">
+
+            <div class="column">
+
+                <h2>To Do</h2>
+
+                <div
+                    id="todo"
+                    class="task-list"
+                ></div>
+
+            </div>
+
+            <div class="column">
+
+                <h2>In Progress</h2>
+
+                <div
+                    id="progress"
+                    class="task-list"
+                ></div>
+
+            </div>
+
+            <div class="column">
+
+                <h2>Done</h2>
+
+                <div
+                    id="done"
+                    class="task-list"
+                ></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

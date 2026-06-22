@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI,sans-serif;
+    min-height:100vh;
+    background:
+    linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b
+    );
+
+    color:white;
+    padding:30px;
+}
+
+.container{
+    max-width:1300px;
+    margin:auto;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+h1{
+    font-size:40px;
+}
+
+.stats{
+    display:flex;
+    gap:20px;
+}
+
+.stat{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    padding:15px 25px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.stat span{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.task-form{
+    display:flex;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.task-form input{
+    flex:1;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.task-form button{
+    padding:15px 25px;
+    border:none;
+    background:#38bdf8;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.board{
+    display:grid;
+    grid-template-columns:
+    repeat(3,1fr);
+    gap:20px;
+}
+
+.column{
+    background:
+    rgba(255,255,255,.07);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:20px;
+
+    padding:20px;
+}
+
+.column h2{
+    margin-bottom:20px;
+}
+
+.task-list{
+    min-height:400px;
+}
+
+.task{
+    background:white;
+    color:#111;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+.task p{
+    margin-bottom:15px;
+    font-weight:600;
+}
+
+.task-buttons{
+    display:flex;
+    gap:10px;
+}
+
+.task button{
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.move{
+    background:#22c55e;
+    color:white;
+}
+
+.delete{
+    background:#ef4444;
+    color:white;
+}
+
+@media(max-width:900px){
+
+    .board{
+        grid-template-columns:1fr;
+    }
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+}
