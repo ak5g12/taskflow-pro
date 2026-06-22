@@ -36,3 +36,23 @@ It helps users organize tasks efficiently using a visual workflow system (To Do 
 
 ---
 
+## ⚙️ How It Works
+
+- Each task is stored as an object with a unique ID and status
+- Task status controls which column it appears in
+- DOM is dynamically updated based on task changes
+- Local Storage is used to persist data in the browser
+
+---
+
+## ⚠️ Important Note (Data Storage Behavior)
+
+- This project uses **browser Local Storage**
+- Data is saved **locally on the same browser and device**
+- Tasks remain available even after page refresh
+
+⚠️ However:
+- Data is NOT shared across different devices or systems
+- If you open this project on another device or browser, it will start with a fresh (empty) task list
+- No backend or database is connected in this version
+
